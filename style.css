@@ -159,6 +159,45 @@
   background-color: #e66060;
 }
 
+/*  */
+
+.navbarContainer--div{
+  padding-block: 24px;
+
+}
+
+.navbar__logoContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin-inline: auto;
+
+}
+
+.menu_btn{
+  color: var(--BlackColor);
+}
+
+.toggle_menu{
+  display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.navbar__menulist{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-right: 107px
+}
+
+.menuitems:hover .dropdown.mobiledropdown{
+  right: -136px;
+}
+
+
 /* Home Page */
 
 .home_heroSection {
