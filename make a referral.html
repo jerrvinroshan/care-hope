@@ -102,237 +102,259 @@
 
     <!-- main section -->
 
-    <div class="referral__mainSection">
-        <div class="referral__mainSectionContainer">
-            <div class="form__container">
-                <div class="form__personalContainer">
-                    <h2 class="form__Container--h2 form__personalContainer--h2">Participant's Details</h2>
-                    <form action="#" class="form__Container--form form__personalContainer--form">
-                        <!-- name -->
-                        <div class="form__inputContainer--div">
-                            <label class="form__Container--label form__personalContainer--label"
-                                for="Participant Name">Participant Name <sup
-                                    class="form__Container--sup">*</sup></label>
-                            <input class="form__Container--input form__personalContainer--input" type="text"
-                                name="Participant Name" id="participantName" placeholder="Enter Participant Name"
-                                required />
+    <div class="referral__section">
+        <div class="referral__container">
+            <!-- form and btn -->
+            <form class="referral__formContainer--form" action="#" method="get">
+                <!-- form container -->
+                <div class="referral__formContent__container">
+                    <!-- Participant's Details -->
+                    <div class="referralform__Container referral__personalContainer">
+                        <h2 class="referralform--h2 referral__personal--h2">Participant's Details</h2>
+                        <div class="referralform__contentCotnainer referral__personalFormContainer">
+                            <!-- name -->
+                            <div class="form__inputContainer--div">
+                                <label class="form__Container--label form__personalContainer--label"
+                                    for="Participant Name">Participant Name <sup
+                                        class="form__Container--sup">*</sup></label>
+                                <input class="form__Container--input form__personalContainer--input" type="text"
+                                    name="Participant Name" id="participantName" placeholder="Enter Participant Name"
+                                    required />
+                            </div>
+                            <!-- Dob -->
+                            <div class="form__inputContainer--div">
+                                <label class="form__Container--label form__personalContainer--label"
+                                    for="DOB">Date of Birth <sup
+                                        class="form__Container--sup">*</sup></label>
+                                <input class="form__Container--input form__personalContainer--input" type="text"
+                                    name="DOB" id="dob" placeholder="DD / MM / YY" required />
+                            </div>
+                            <!-- Phone Number -->
+                            <div class="form__inputContainer--div">
+                                <label class="form__Container--label form__personalContainer--label"
+                                    for="Phone Number">Phone Number <sup
+                                        class="form__Container--sup">*</sup></label>
+                                <input class="form__Container--input form__personalContainer--input" type="tel"
+                                    name="Phone Number" id="phoneNumber" placeholder="Phone" required />
+                            </div>
+                            <!-- Email -->
+                            <div class="form__inputContainer--div">
+                                <label class="form__Container--label form__personalContainer--label"
+                                    for="email">Email</label>
+                                <input class="form__Container--input form__personalContainer--input" type="email"
+                                    name="email" id="email" placeholder="Enter email" />
+                            </div>
+                            <!-- NDIS Number -->
+                            <div class="form__inputContainer--div">
+                                <label class="form__Container--label form__personalContainer--label"
+                                    for="NDIS Number">NDIS Number</label>
+                                <input class="form__Container--input form__personalContainer--input" type="text"
+                                    name="NDIS Number" id="NDISNumber" placeholder="Enter NDIS Number" />
+                            </div>
+                            <!-- Name of NDIS Plan Manager -->
+                            <div class="form__inputContainer--div">
+                                <label class="form__Container--label form__personalContainer--label"
+                                    for="Plan Manager">Name of NDIS Plan Manager</label>
+                                <input class="form__Container--input form__personalContainer--input" type="text"
+                                    name="Plan Manager" id="planManager" placeholder="Enter Name" />
+                            </div>
                         </div>
-                        <!-- DOB -->
-                        <div class="form__inputContainer--div">
-                            <label class="form__Container--label form__personalContainer--label" for="DOB">Date of Birth
-                                <sup class="form__Container--sup">*</sup></label>
-                            <input class="form__Container--input form__personalContainer--input" type="text" name="DOB"
-                                id="dob" placeholder="DD / MM / YY" required />
-                        </div>
-                        <!-- Phone -->
-                        <div class="form__inputContainer--div">
-                            <label class="form__Container--label form__personalContainer--label" for="Phone">Phone
-                                Number <sup class="form__Container--sup">*</sup></label>
-                            <input class="form__Container--input form__personalContainer--input" type="tel" name="Phone"
-                                id="phone" placeholder="Phone" required />
-                        </div>
-                        <!-- Email -->
-                        <div class="form__inputContainer--div">
-                            <label class="form__Container--label form__personalContainer--label" for="Email">Email
-                            </label>
-                            <input class="form__Container--input form__personalContainer--input" type="email"
-                                name="Email" id="email" placeholder="Enter email" />
-                        </div>
-                        <!-- NDIS Number -->
-                        <div class="form__inputContainer--div">
-                            <label class="form__Container--label form__personalContainer--label" for="NDIS Number">NDIS
-                                Number </label>
-                            <input class="form__Container--input form__personalContainer--input" type="text"
-                                name="NDIS Number" id="ndisNumber" placeholder="Enter NDIS number" />
-                        </div>
-                        <!-- Name of NDIS Plan Manager -->
-                        <div class="form__inputContainer--div">
-                            <label class="form__Container--label form__personalContainer--label"
-                                for="NDIS Plan Manager">Name of NDIS Plan Manager </label>
-                            <input class="form__Container--input form__personalContainer--input" type="text"
-                                name="NDIS Plan Manager" id="ndisManagerName" placeholder="Enter the Name" />
-                        </div>
-                    </form>
-                </div>
-                <!-- Address Form -->
-                <div class="form__personalContainer">
-                    <h2 class="form__Container--h2 form__personalContainer--h2">Address</h2>
-                    <form action="#" class="form__Container--form form__personalContainer--form">
-                        <!-- Street Address -->
-                        <div class="form__inputContainer--div">
-                            <label class="form__Container--label form__personalContainer--label"
-                                for="Street Address">Street Address <sup class="form__Container--sup">*</sup></label>
-                            <input class="form__Container--input form__personalContainer--input" type="text"
-                                name="Street Address" id="streetAddress" placeholder="Street Address" required />
-                        </div>
-                        <!-- Suburb -->
-                        <div class="form__inputContainer--div">
-                            <label class="form__Container--label form__personalContainer--label" for="Suburb">Suburb
-                            </label>
-                            <input class="form__Container--input form__personalContainer--input" type="text"
-                                name="Suburb" id="Suburb" placeholder="Location" />
-                        </div>
-                        <!-- State -->
-                        <div class="form__inputContainer--div">
-                            <label class="form__Container--label form__personalContainer--label" for="State">State
-                            </label>
-                            <input class="form__Container--input form__personalContainer--input" type="text"
-                                name="State" id="state" placeholder="State" />
-                        </div>
-                        <!-- Postal Code -->
-                        <div class="form__inputContainer--div">
-                            <label class="form__Container--label form__personalContainer--label"
-                                for="Postal Code">Postal Code </label>
-                            <input class="form__Container--input form__personalContainer--input" type="text"
-                                name="Postal Code" id="postalCode" placeholder="Postal Code" />
-                        </div>
-                    </form>
-                </div>
-                <!-- Referrer Details -->
-                <div class="form__personalContainer">
-                    <h2 class="form__Container--h2 form__personalContainer--h2">Referrer Details</h2>
-                    <form action="#" class="form__Container--form form__personalContainer--form">
-                        <!-- First Name -->
-                        <div class="form__inputContainer--div">
-                            <label class="form__Container--label form__personalContainer--label" for="First Name">First
-                                Name</label>
-                            <input class="form__Container--input form__personalContainer--input" type="text"
-                                name="First Name" id="f_Name" placeholder="Enter first name" />
-                        </div>
-                        <!-- Last Name -->
-                        <div class="form__inputContainer--div">
-                            <label class="form__Container--label form__personalContainer--label" for="Last Name">Last
-                                Name </label>
-                            <input class="form__Container--input form__personalContainer--input" type="text"
-                                name="Last Name" id="l_Name" placeholder="Enter last name" />
-                        </div>
-                        <!-- Phone -->
-                        <div class="form__inputContainer--div">
-                            <label class="form__Container--label form__personalContainer--label" for="Phone">Phone
-                                Number</label>
-                            <input class="form__Container--input form__personalContainer--input" type="tel" name="Phone"
-                                id="phoneNumber" placeholder="Phone" />
-                        </div>
-                        <!-- Email -->
-                        <div class="form__inputContainer--div">
-                            <label class="form__Container--label form__personalContainer--label" for="Email">Email
-                            </label>
-                            <input class="form__Container--input form__personalContainer--input" type="email"
-                                name="Email" id="emailId" placeholder="Enter email" />
-                        </div>
-                        <!-- Organization & Position -->
-                        <div class="form__inputContainer--div">
-                            <label class="form__Container--label form__personalContainer--label"
-                                for="Organization & Position">Organization & Position </label>
-                            <input class="form__Container--input form__personalContainer--input" type="text"
-                                name="Organization & Position" id="Organization&Position"
-                                placeholder="Organization & Position" />
-                        </div>
-                        <!-- Relationship to NDIS participant -->
-                        <div class="form__inputContainer--div">
-                            <label class="form__Container--label form__personalContainer--label"
-                                for="NDISparticipant">Relationship to NDIS participant </label>
-                            <input class="form__Container--input form__personalContainer--input" type="text"
-                                name="NDISparticipant" id="RelationshipNDISparticipant"
-                                placeholder="Relationship to NDIS participant" />
-                        </div>
-                        <button type="button" class="referral__btn">Submit</button>
+                    </div>
+                    <!-- Address -->
+                    <div class="referralform__Container referral__addressContainer">
+                        <h2 class="referralform--h2 referral__address--h2">Address</h2>
+                        <div class="referralform__contentCotnainer referral__addressFormContainer">
+                            <!-- Street Address -->
+                            <div class="form__inputContainer--div">
+                                <label class="form__Container--label form__addressContainer--label"
+                                    for="Street Address">Street Address<sup
+                                        class="form__Container--sup">*</sup></label>
+                                <input class="form__Container--input form__addressContainer--input" type="text"
+                                    name="Street Address" id="streetAddress" placeholder="Street Address"
+                                    required />
+                            </div>
+                            <!-- Suburb -->
+                            <div class="form__inputContainer--div">
+                                <label class="form__Container--label form__addressContainer--label"
+                                    for="Suburb">Suburb </label>
+                                <input class="form__Container--input form__addressContainer--input" type="text"
+                                    name="Suburb" id="suburb" placeholder="Location" />
+                            </div>
+                            <!-- State -->
+                            <div class="form__inputContainer--div">
+                                <label class="form__Container--label form__addressContainer--label"
+                                    for="state">State</label>
+                                <input class="form__Container--input form__addressContainer--input" type="text"
+                                    name="state" id="state" placeholder="state" />
+                            </div>
+                            <!-- Postal code -->
+                            <div class="form__inputContainer--div">
+                                <label class="form__Container--label form__addressContainer--label"
+                                    for="postal code">Postal code</label>
+                                <input class="form__Container--input form__addressContainer--input" type="text"
+                                    name="postal code" id="postalCode" placeholder="Postal code" />
+                            </div>
 
-                    </form>
+                        </div>
+                    </div>
+                    <!-- Referrer Details -->
+                    <div class="referralform__Container referral__addressContainer">
+                        <h2 class="referralform--h2 referral__address--h2">Referrer Details</h2>
+                        <div class="referralform__contentCotnainer referral__addressFormContainer">
+                            <!-- First Name -->
+                            <div class="form__inputContainer--div">
+                                <label class="form__Container--label form__addressContainer--label"
+                                    for="First Name">First Name</label>
+                                <input class="form__Container--input form__addressContainer--input" type="text"
+                                    name="First Name" id="fName" placeholder="Enter first name" />
+                            </div>
+                            <!-- Last Name -->
+                            <div class="form__inputContainer--div">
+                                <label class="form__Container--label form__addressContainer--label"
+                                    for="Last Name">Last Name </label>
+                                <input class="form__Container--input form__addressContainer--input" type="text"
+                                    name="Last Name" id="lName" placeholder="Enter last name" />
+                            </div>
+                            <!-- Phone Number -->
+                            <div class="form__inputContainer--div">
+                                <label class="form__Container--label form__addressContainer--label"
+                                    for="Phone Number">Phone Number</label>
+                                <input class="form__Container--input form__addressContainer--input" type="tel"
+                                    name="Phone Number" id="PhoneNumber" placeholder="Phone" />
+                            </div>
+                            <!-- Email -->
+                            <div class="form__inputContainer--div">
+                                <label class="form__Container--label form__addressContainer--label"
+                                    for="email">Email</label>
+                                <input class="form__Container--input form__addressContainer--input" type="email"
+                                    name="email" id="emailId" placeholder="Enter email" />
+                            </div>
+                            <!-- Organization & Position -->
+                            <div class="form__inputContainer--div">
+                                <label class="form__Container--label form__addressContainer--label"
+                                    for="Organization & Position">Organization & Position</label>
+                                <input class="form__Container--input form__addressContainer--input" type="text"
+                                    name="Organization & Position" id="organization_&_Position"
+                                    placeholder="Organization & Position" />
+                            </div>
+                            <!-- Relationship to NDIS participant -->
+                            <div class="form__inputContainer--div">
+                                <label class="form__Container--label form__addressContainer--label"
+                                    for="Relationship to NDIS">Relationship to NDIS participant</label>
+                                <input class="form__Container--input form__addressContainer--input" type="text"
+                                    name="Relationship to NDIS" id="Relationship_participantName"
+                                    placeholder="Relationship to NDIS participant" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-            </div>
-            <img src="./img/make a referral/form.png" alt="" class="referral__mainSection--img">
+                <button class="referral__form--btn" type="submit">Submit</button>
+            </form>
+            <img src="./img/make a referral/form.png" alt="" class="referral--img">
         </div>
     </div>
 
 
     <!-- Footer Section -->
 
-  <footer class="footerSection">
+    <footer class="footerSection">
 
-    <!-- Container -->
+        <!-- Container -->
 
-    <div class="footerSection__container">
-      <!-- Logo -->
-      <div class="footerSection__logoContainer">
-        <div class="logoContainer__content">
-            <a href="index.html"><img class="logoContainer--img" src="./img/logo/logo different color (1).svg" alt=""></a>
-          <p class="logoContainer--p">Lorem ipsum dolor sit amet consectetur. Non scelerisque at arcu in rhoncus ut
-            dictum risus fermentum. Dui felis adipiscing in viverra donec quam. Proin accumsan at nunc tellus eu
-            elementum. Diam purus tellus aenean feugiat ac quis dolor quis id.</p>
-        </div>
-        <!-- Social Media -->
-        <div class="logoContainer__social">
-          <a href="#"><img src="./img/social/facebook.svg" alt="" class="logoContainer__social--img"></a>
-          <a href="#"><img src="./img/social/instagram.svg" alt="" class="logoContainer__social--img"></a>
-          <a href="#"><img src="./img/social/twitter.svg" alt="" class="logoContainer__social--img"> </a>
-          <a href="#"><img src="./img/social/pinterest.svg" alt="" class="logoContainer__social--img"></a>
-        </div>
-      </div>
-      <!-- Links Container -->
-      <div class="linkContainer">
-        <!-- Quick Links -->
-        <div class="footerSection__linkContainer footerSection__quickContainer">
-          <h5 class="footerSection__link--h5 footerSection__quick--h5">Quick Link</h5>
-          <div class="quicklink__container">
-            <a href="index.html" class="quicklink__link">Home</a>
-            <a href="about-us.html" class="quicklink__link">About us</a>
-            <a href="make a referral.html" class="quicklink__link">Make a Referral</a>
-            <a href="knowledge base.html" class="quicklink__link">Knowledge Base</a>
-          </div>
-        </div>
-        <!-- Services Links -->
-        <div class="footerSection__linkContainer footerSection__serviceContainer">
-          <h5 class="footerSection__link--h5 footerSection__service--h5">Services</h5>
-          <div class="servicelink__container">
-            <a href="./services/support_coordination.html" class="servicelink__link">Support Coordination</a>
-            <a href="./services/disability_care_and_NDIS.html" class="servicelink__link">Disability care and NDIS</a>
-            <a href="./services/NDIS_day_program.html" class="servicelink__link">NDIS day program</a>
-            <a href="./services/supported_independent_living.html" class="servicelink__link">Supported independent
-              Living (SIL)</a>
-            <a href="./services/specialist_disability_accommodation.html" class="servicelink__link">Specialist
-              Disability Accommodation (SDA)</a>
-            <a href="./services/intensive_care_at_home.html" class="servicelink__link">Intensive care at home</a>
-            <a href="./services/homecare_servies.html" class="servicelink__link">Homecare Servies</a>
-            <a href="./services/24_hour_home_care_services.html" class="servicelink__link">24 Hour home care
-              services</a>
-            <a href="./services/dementia_and_alzheimer.html" class="servicelink__link">Dementia and Alzheimer</a>
-            <a href="./services/various_accommodation_assitance.html" class="servicelink__link">Various Accommodation
-              Assitance</a>
-            <a href="./services/transportation_assitance.html" class="servicelink__link">Transportation Assitance</a>
-            <a href="./services/household_tasks.html" class="servicelink__link">Household Tasks</a>
-            <a href="./services/life_skill_development.html" class="servicelink__link">Life Skill Development</a>
-            <a href="./services/innovative_community_&_social_participation.html" class="servicelink__link">Innovative
-              community & Social Participation</a>
-            <a href="./services/physical_wellbeing_&_health.html" class="servicelink__link">Physical Wellbeing &
-              Health</a>
-          </div>
-        </div>
-        <!-- contact Links -->
-        <div class="footerSection__linkContainer footerSection__contactContainer">
-          <h5 class="footerSection__link--h5 footerSection__contact--h5">Contact</h5>
-          <div class="contactlink__container">
-            <a href="tel:" class="contactlink__link">
-              <img src="./img/icon/phone_white.svg" alt="" class="contactlink--img contactlink__phone">
-              <p class="contactlink--p">3254875968</p>
-            </a>
-            <a href="mailto:" class="contactlink__link"> <img src="./img/icon/mail_white.svg" alt=""
-                class="contactlink--img contactlink__phone">
-              <p class="contactlink--p">sample@mail.com</p>
-            </a>
-          </div>
-        </div>
-      </div>
+        <div class="footerSection__container">
+            <!-- Logo -->
+            <div class="footerSection__logoContainer">
+                <div class="logoContainer__content">
+                    <a href="index.html"><img class="logoContainer--img" src="./img/logo/logo different color (1).svg"
+                            alt=""></a>
+                    <p class="logoContainer--p">Lorem ipsum dolor sit amet consectetur. Non scelerisque at arcu in
+                        rhoncus ut
+                        dictum risus fermentum. Dui felis adipiscing in viverra donec quam. Proin accumsan at nunc
+                        tellus eu
+                        elementum. Diam purus tellus aenean feugiat ac quis dolor quis id.</p>
+                </div>
+                <!-- Social Media -->
+                <div class="logoContainer__social">
+                    <a href="#"><img src="./img/social/facebook.svg" alt="" class="logoContainer__social--img"></a>
+                    <a href="#"><img src="./img/social/instagram.svg" alt="" class="logoContainer__social--img"></a>
+                    <a href="#"><img src="./img/social/twitter.svg" alt="" class="logoContainer__social--img"> </a>
+                    <a href="#"><img src="./img/social/pinterest.svg" alt="" class="logoContainer__social--img"></a>
+                </div>
+            </div>
+            <!-- Links Container -->
+            <div class="linkContainer">
+                <!-- Quick Links -->
+                <div class="footerSection__linkContainer footerSection__quickContainer">
+                    <h5 class="footerSection__link--h5 footerSection__quick--h5">Quick Link</h5>
+                    <div class="quicklink__container">
+                        <a href="index.html" class="quicklink__link">Home</a>
+                        <a href="about-us.html" class="quicklink__link">About us</a>
+                        <a href="make a referral.html" class="quicklink__link">Make a Referral</a>
+                        <a href="knowledge base.html" class="quicklink__link">Knowledge Base</a>
+                    </div>
+                </div>
+                <!-- Services Links -->
+                <div class="footerSection__linkContainer footerSection__serviceContainer">
+                    <h5 class="footerSection__link--h5 footerSection__service--h5">Services</h5>
+                    <div class="servicelink__container">
+                        <a href="./services/support_coordination.html" class="servicelink__link">Support
+                            Coordination</a>
+                        <a href="./services/disability_care_and_NDIS.html" class="servicelink__link">Disability care and
+                            NDIS</a>
+                        <a href="./services/NDIS_day_program.html" class="servicelink__link">NDIS day program</a>
+                        <a href="./services/supported_independent_living.html" class="servicelink__link">Supported
+                            independent
+                            Living (SIL)</a>
+                        <a href="./services/specialist_disability_accommodation.html"
+                            class="servicelink__link">Specialist
+                            Disability Accommodation (SDA)</a>
+                        <a href="./services/intensive_care_at_home.html" class="servicelink__link">Intensive care at
+                            home</a>
+                        <a href="./services/homecare_servies.html" class="servicelink__link">Homecare Servies</a>
+                        <a href="./services/24_hour_home_care_services.html" class="servicelink__link">24 Hour home care
+                            services</a>
+                        <a href="./services/dementia_and_alzheimer.html" class="servicelink__link">Dementia and
+                            Alzheimer</a>
+                        <a href="./services/various_accommodation_assitance.html" class="servicelink__link">Various
+                            Accommodation
+                            Assitance</a>
+                        <a href="./services/transportation_assitance.html" class="servicelink__link">Transportation
+                            Assitance</a>
+                        <a href="./services/household_tasks.html" class="servicelink__link">Household Tasks</a>
+                        <a href="./services/life_skill_development.html" class="servicelink__link">Life Skill
+                            Development</a>
+                        <a href="./services/innovative_community_&_social_participation.html"
+                            class="servicelink__link">Innovative
+                            community & Social Participation</a>
+                        <a href="./services/physical_wellbeing_&_health.html" class="servicelink__link">Physical
+                            Wellbeing &
+                            Health</a>
+                    </div>
+                </div>
+                <!-- contact Links -->
+                <div class="footerSection__linkContainer footerSection__contactContainer">
+                    <h5 class="footerSection__link--h5 footerSection__contact--h5">Contact</h5>
+                    <div class="contactlink__container">
+                        <a href="tel:" class="contactlink__link">
+                            <img src="./img/icon/phone_white.svg" alt="" class="contactlink--img contactlink__phone">
+                            <p class="contactlink--p">3254875968</p>
+                        </a>
+                        <a href="mailto:" class="contactlink__link"> <img src="./img/icon/mail_white.svg" alt=""
+                                class="contactlink--img contactlink__phone">
+                            <p class="contactlink--p">sample@mail.com</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-      <!-- copryright -->
+            <!-- copryright -->
 
-      
-    </div>
-    <hr class="hr--line" >
-    <div class="copyrightsection">Copyright 2024</div>
 
-  </footer>
+        </div>
+        <hr class="hr--line">
+        <div class="copyrightsection">Copyright 2024</div>
+
+    </footer>
 
 </body>
 
