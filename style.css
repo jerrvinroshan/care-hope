@@ -47,7 +47,6 @@
   width: 100%;
   z-index: 1000;
   top: 0;
-  transition: background-color 0.4s linear;
 }
 
 .navbaritems--div {
@@ -159,44 +158,105 @@
   background-color: #e66060;
 }
 
-/*  */
+/* Mobile view */
 
-.navbarContainer--div{
+.navbarmobile--nav {
+  /* position: fixed; */
   padding-block: 24px;
-
+  background-color: white;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  display: none;
 }
 
-.navbar__logoContainer{
+.navbar__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  max-width: 1000px;
+  max-width: 1012px;
   margin-inline: auto;
-
+  width: 95%;
 }
 
-.menu_btn{
-  color: var(--BlackColor);
+.mobile__dropdownMenu {
+  margin: 36px;
+  display: none;
 }
 
-.toggle_menu{
+.mobile__dropdownMenu.open {
   display: flex;
-    flex-direction: column;
-    align-items: end;
 }
 
-.navbar__menulist{
+.navbar__mobilemenulist--ul {
+  list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: baseline;
-  margin-right: 107px
+  gap: 12px;
+  width: 100%;
 }
 
-.menuitems:hover .dropdown.mobiledropdown{
-  right: -136px;
+.navbar__mobilemenulinks--a {
+  text-decoration: none;
+  color: var(--BlackColor);
+  font-size: var(--Navbar);
+  display: block;
 }
 
+.navbar__mobilemenulinks--a.active {
+  color: var(--PrimaryColor);
+  font-weight: 700;
+}
+
+.menudropdown__container {
+  text-decoration: none;
+  color: var(--BlackColor);
+  font-size: var(--Navbar);
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.menudropdown--img.open {
+  transform: rotate(180deg);
+}
+
+.mobile__dropdownList--ul {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px 0px;
+}
+
+.mobile__dropdownList--ul.open {
+  display: flex;
+}
+
+.mobile__dropdownItem--li {
+  width: 100%;
+}
+
+.mobile__dropdownLink--a {
+  display: block;
+  color: var(--BlackColor);
+  font-size: var(--Navbar);
+  text-decoration: none;
+}
+
+.mobile__dropdownLink--a.active{
+  color: var(--PrimaryColor);
+  font-weight: 700;
+}
+
+.navbar__contactBtn--a {
+  padding: 8px 12px;
+  color: var(--WhiteColor);
+  background-color: var(--RedColor);
+  border-radius: 24px;
+  max-width: 112px;
+}
 
 /* Home Page */
 
@@ -759,11 +819,11 @@
 
 /*  */
 
-.referral__section{
+.referral__section {
   margin-top: 120px;
 }
 
-.referral__container{
+.referral__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -773,29 +833,29 @@
   align-items: start;
   width: 98%;
 }
-.referral__formContainer--form{
+.referral__formContainer--form {
   display: flex;
   flex-direction: column;
   gap: 74px;
 }
 
-.referral__formContent__container{
+.referral__formContent__container {
   display: flex;
   flex-direction: column;
   gap: 98px;
 }
 
-.referralform__Container{
+.referralform__Container {
   display: flex;
   flex-direction: column;
   gap: 36px;
 }
 
-.referralform--h2{
+.referralform--h2 {
   font-size: var(--H6);
 }
 
-.referralform__contentCotnainer{
+.referralform__contentCotnainer {
   display: flex;
   flex-wrap: wrap;
   max-width: 816px;
@@ -804,7 +864,7 @@
   justify-content: center;
 }
 
-.form__inputContainer--div{
+.form__inputContainer--div {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -828,7 +888,7 @@
   color: var(--RedColor);
 }
 
-.referral__form--btn{
+.referral__form--btn {
   padding: 8px 28px;
   color: var(--BlackColor);
   background-color: var(--RedColor);
@@ -839,11 +899,10 @@
   max-width: 108px;
 }
 
-.referral--img{
+.referral--img {
   border-radius: 8px;
   object-fit: contain;
 }
-
 
 /* Footer Section */
 
@@ -974,17 +1033,17 @@
 
 /* Resposive */
 
-@media (max-width:  1273px){
+@media (max-width: 1273px) {
   /* knowwedge base */
-  .knowbase__blogSection{
+  .knowbase__blogSection {
     justify-content: center;
   }
   /* services page */
-  .service__mainSection{
+  .service__mainSection {
     justify-content: center;
   }
   /* Make A Referral */
-  .referral__container{
+  .referral__container {
     justify-content: center;
   }
 }
@@ -1008,24 +1067,56 @@
   .navbardesktop--nav {
     display: none;
   }
+
+  /* Mobile navbar */
+  .navbarmobile--nav {
+    display: block;
+  }
+
+  /* Home page */
+  .home_heroSection {
+    padding-top: 0;
+  }
+  /* About us Page */
+  .aboutus__headerSection {
+    padding-top: 0;
+  }
+  /* Contact us Page */
+  .contactus__headerSection {
+    padding-top: 0;
+  }
+  /* Knowledge Base page */
+
+  .knowbase__headerSection {
+    padding-top: 0;
+  }
+  /* Services Page */
+
+  .service__headerSection {
+    padding-top: 0;
+  }
+  /* Make a referral */
+  .refer__headerSection {
+    padding-top: 0;
+  }
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
   /* Contact page */
   /* .contactDetails__section{
     justify-content: center;
   } */
-    .contactDetails--img{
-      object-fit: cover;
-      aspect-ratio: 12 / 7.8;
-      width: 98%;
-      max-width: 550px;
-    }
+  .contactDetails--img {
+    object-fit: cover;
+    aspect-ratio: 12 / 7.8;
+    width: 98%;
+    max-width: 550px;
+  }
 }
 
-@media (max-width:1148px){
-    /* Contact page */
-  .contactDetails__section{
+@media (max-width: 1148px) {
+  /* Contact page */
+  .contactDetails__section {
     justify-content: center;
   }
 }
@@ -1035,7 +1126,7 @@
   .aboutus__mainSection {
     flex-direction: column;
   }
-  .aboutus__mainSection{
+  .aboutus__mainSection {
     gap: 48px;
   }
   .aboutus__mainSection--img {
@@ -1074,27 +1165,33 @@
   }
   /* About us page */
 
-  .aboutus__valueSection{
+  .aboutus__valueSection {
     flex-direction: column;
     align-items: center;
   }
-  .aboutus__valueSection__Card{
+  .aboutus__valueSection__Card {
     max-width: 384px;
   }
 }
 
-@media (max-width: 833px){
+@media (max-width: 892px){
+  .service__headerImg {
+    padding-top: 80px;
+}
+}
+
+@media (max-width: 833px) {
   /* Make a Referral */
-  .referral__formContainer--form{
+  .referral__formContainer--form {
     align-items: center;
   }
-  .referralform__Container{
+  .referralform__Container {
     align-items: center;
   }
-  .referralform__contentCotnainer{
+  .referralform__contentCotnainer {
     row-gap: 48px;
   }
-  .referral--img{
+  .referral--img {
     display: none;
   }
 }
@@ -1109,7 +1206,7 @@
     row-gap: 48px;
   }
   /* Contact page */
-  .contactDetails--img{
+  .contactDetails--img {
     object-fit: cover;
     aspect-ratio: 18 / 9;
     max-width: 550px;
@@ -1117,7 +1214,7 @@
   }
   /* Services Page */
 
-  .service__mainSection--img{
+  .service__mainSection--img {
     object-fit: cover;
     aspect-ratio: 18 / 9;
     max-width: 550px;
@@ -1133,12 +1230,22 @@
   .servicelink__container {
     max-height: none;
   }
-    /* Contact page */
-    .contactDetails--img{
-      object-fit: cover;
-      aspect-ratio: 18 / 9;
-      max-width: 480px;
-    }
+  /* Contact page */
+  .contactDetails--img {
+    object-fit: cover;
+    aspect-ratio: 18 / 9;
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 478px){
+  /* Services page */
+  .service__headerImg {
+    padding-top: 80px;
+}
+.service__heading--h1 {
+  font-size: var(--H3);
+}
 }
 
 @media (max-width: 425px) {
@@ -1147,26 +1254,33 @@
     max-width: 300px;
   }
 
-    /* About us page */
-    .aboutus__valueSection__Card{
-      max-width: 326px;
-    }
+  /* About us page */
+  .aboutus__valueSection__Card {
+    max-width: 326px;
+  }
 
-    /* knowledge base */
-    .knowbase__blogCards{
-      max-width: 304px;
-    }
+  /* knowledge base */
+  .knowbase__blogCards {
+    max-width: 304px;
+  }
 
-    /* Make a referral */
-    .form__Container--input{
-      min-width: 364px;
-    }
+  /* Make a referral */
+  .form__Container--input {
+    min-width: 364px;
+  }
+
 }
 
-
-@media (max-width: 375px){
-      /* Make a referral */
-      .form__Container--input{
-        min-width: 300px;
-      }
+@media (max-width: 375px) {
+  /* Make a referral */
+  .form__Container--input {
+    min-width: 300px;
+  }
+    /* Services page */
+    .service__headerImg {
+      padding-top: 80px;
+  }
+  .service__heading--h1 {
+    font-size: var(--H4);
+  }
 }
