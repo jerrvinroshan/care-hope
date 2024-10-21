@@ -180,8 +180,6 @@
   width: 95%;
 }
 
-
-
 .mobile__dropdownMenu {
   margin: 36px;
   display: none;
@@ -247,7 +245,7 @@
   text-decoration: none;
 }
 
-.mobile__dropdownLink--a.active{
+.mobile__dropdownLink--a.active {
   color: var(--PrimaryColor);
   font-weight: 700;
 }
@@ -458,7 +456,7 @@
   font-weight: 700;
 }
 
-.btn__container{
+.btn__container {
   display: flex;
   gap: 16px;
   margin-top: 74px;
@@ -467,18 +465,18 @@
   flex-wrap: wrap;
 }
 
-.btn--a{
+.btn--a {
   text-decoration: none;
   padding: 8px 16px;
   border-radius: 24px;
   color: var(--WhiteColor);
 }
 
-.btn__makereferral{
+.btn__makereferral {
   background-color: var(--PrimaryColor);
 }
 
-.btn__contactus{
+.btn__contactus {
   background-color: var(--RedColor);
 }
 
@@ -1126,7 +1124,7 @@
     padding-top: 0;
   }
   /* Float Contact us */
-  .float__contactus--a{
+  .float__contactus--a {
     padding: 8px 12px;
     text-decoration: none;
     color: var(--WhiteColor);
@@ -1211,10 +1209,10 @@
   }
 }
 
-@media (max-width: 892px){
+@media (max-width: 892px) {
   .service__headerImg {
     padding-top: 80px;
-}
+  }
 }
 
 @media (max-width: 833px) {
@@ -1275,20 +1273,19 @@
   }
 }
 
-@media (max-width: 478px){
+@media (max-width: 478px) {
   /* Services page */
   .service__headerImg {
     padding-top: 80px;
-}
-.service__heading--h1 {
-  font-size: var(--H3);
-}
+  }
+  .service__heading--h1 {
+    font-size: var(--H3);
+  }
 }
 
 @media (max-width: 425px) {
-
   /* Navbar */
-  .navbar__logolink--a{
+  .navbar__logolink--a {
     margin-left: 144px;
   }
 
@@ -1311,7 +1308,6 @@
   .form__Container--input {
     min-width: 364px;
   }
-
 }
 
 @media (max-width: 375px) {
@@ -1319,9 +1315,9 @@
   .form__Container--input {
     min-width: 300px;
   }
-    /* Services page */
-    .service__headerImg {
-      padding-top: 80px;
+  /* Services page */
+  .service__headerImg {
+    padding-top: 80px;
   }
   .service__heading--h1 {
     font-size: var(--H4);
