@@ -180,6 +180,8 @@
   width: 95%;
 }
 
+
+
 .mobile__dropdownMenu {
   margin: 36px;
   display: none;
@@ -1249,6 +1251,12 @@
 }
 
 @media (max-width: 425px) {
+
+  /* Navbar */
+  .navbar__logolink--a{
+    margin-left: 144px;
+  }
+
   /* Home page */
   .cards--a {
     max-width: 300px;
