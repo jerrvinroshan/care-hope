@@ -1101,6 +1101,17 @@
   .refer__headerSection {
     padding-top: 0;
   }
+  /* Float Contact us */
+  .float__contactus--a{
+    padding: 8px 12px;
+    text-decoration: none;
+    color: var(--WhiteColor);
+    background-color: var(--RedColor);
+    border-radius: 24px;
+    position: fixed;
+    top: 528px;
+    right: 24px;
+  }
 }
 
 @media (max-width: 1200px) {
