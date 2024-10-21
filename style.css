@@ -458,6 +458,30 @@
   font-weight: 700;
 }
 
+.btn__container{
+  display: flex;
+  gap: 16px;
+  margin-top: 74px;
+  max-width: 292px;
+  margin-inline: auto;
+  flex-wrap: wrap;
+}
+
+.btn--a{
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 24px;
+  color: var(--WhiteColor);
+}
+
+.btn__makereferral{
+  background-color: var(--PrimaryColor);
+}
+
+.btn__contactus{
+  background-color: var(--RedColor);
+}
+
 /* About us Page */
 .aboutus__headerSection {
   padding-top: 129px;
