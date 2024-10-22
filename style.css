@@ -455,7 +455,7 @@
   font-weight: 700;
 }
 
-.btn__container {
+.service__btncontainer {
   display: flex;
   gap: 1rem;
   margin-top: 4.625rem;
