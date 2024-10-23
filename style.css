@@ -28,14 +28,6 @@
   --BodyTxt: 0.75rem;
 }
 
-/* NavBar */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Navbar */
 
 /* Desktop view */
@@ -364,6 +356,10 @@
 .home--mainsection--p {
   font-size: var(--BodyTxt);
   font-weight: 400;
+}
+
+.float__contactus--a{
+  display: none;
 }
 
 /* Services Section */
@@ -1124,6 +1120,7 @@
   }
   /* Float Contact us */
   .float__contactus--a {
+    display: block;
     padding: 0.5rem 0.75rem;
     text-decoration: none;
     color: var(--WhiteColor);
